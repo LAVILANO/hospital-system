@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabgayi District Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- TOP CONTACT BAR -->
+<div class="topbar">
+    <div class="topbar-inner">
+
+        <div class="top-details">
+            <span><i class="fa-solid fa-location-dot"></i> Kabgayi, Rwanda</span>
+            <span><i class="fa-solid fa-phone"></i> +250 78 123 4567</span>
+            <span><i class="fa-solid fa-envelope"></i> info@kabgayihospital.rw</span>
+        </div>
+
+        <div class="social-top">
+            <span>Follow Us:</span>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<!-- NAVIGATION BAR -->
+<header class="main-header">
+
+    <div class="nav-wrap">
+
+        <a class="brand" href="#">
+
+            <span class="brand-mark">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-heart-pulse"></i>
+            </span>
+
+            <span class="brand-copy">
+                <strong>Kabgayi District Hospital</strong>
+                <small>Care Today, Healthier Tomorrow</small>
+            </span>
+
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a class="active" href="#">Home</a>
+            <a href="#about">About Us <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#departments">Departments <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#doctors">Doctors</a>
+            <a href="#patient-info">Patient Information <i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+
+            <button class="search-button" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </nav>
+
+    </div>
+
+    <div class="search-panel" id="searchPanel">
+        <input id="siteSearch" type="search" placeholder="Search hospital information...">
+        <button id="searchSubmit">Search</button>
+    </div>
+
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-shade"></div>
+
+    <div class="hero-content">
+
+        <h1>
+            Quality Healthcare<br>
+            for <span>Every Community</span>
+        </h1>
+
+        <p>
+            Welcome to Kabgayi District Hospital. We are committed<br class="desktop-only">
+            to providing accessible, affordable and quality healthcare<br class="desktop-only">
+            services to all.
+        </p>
+
+        <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#departments">
+                Explore Our Services
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a class="btn btn-light" href="#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <button class="slider-arrow slider-left" id="prevSlide">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="slider-arrow slider-right" id="nextSlide">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+<!-- QUICK LINKS -->
+<section class="quick-links">
+
+    <a href="#departments" class="quick-item">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span>
+            <b>Medical Departments</b>
+            <small>Explore our services</small>
+        </span>
+    </a>
+
+    <a href="#doctors" class="quick-item">
+        <i class="fa-solid fa-users"></i>
+        <span>
+            <b>Find a Doctor</b>
+            <small>Meet our medical team</small>
+        </span>
+    </a>
+
+    <a href="#patient-info" class="quick-item">
+        <i class="fa-regular fa-calendar-days"></i>
+        <span>
+            <b>Book an Appointment</b>
+            <small>Schedule your visit</small>
+        </span>
+    </a>
+
+    <a href="#contact" class="quick-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>
+            <b>Hospital Location</b>
+            <small>Get directions</small>
+        </span>
+    </a>
+
+</section>
+
+<!-- ABOUT / DEPARTMENTS / DOCTORS -->
+<section class="overview section-pad">
+
+    <!-- ABOUT HOSPITAL -->
+    <article class="about-block" id="about">
+
+        <h2>About Our Hospital</h2>
+
+        <p>
+            Kabgayi District Hospital is a modern healthcare facility
+            located in Muhanga District. We are dedicated to providing
+            quality and compassionate care to our patients, with a
+            focus on community health.
+        </p>
+
+        <a class="btn btn-primary small-btn" href="#contact">
+            Learn More
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </article>
+
+    <img class="about-photo"
+         src="assets/about-hospital.jpg"
+         alt="Kabgayi District Hospital building">
+
+    <!-- DEPARTMENTS -->
+    <section class="departments panel" id="departments">
+
+        <h2>Our Departments</h2>
+
+        <div class="department-grid">
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-truck-medical emergency"></i>
+                <b>Emergency<br>Care</b>
+            </a>
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-person-pregnant"></i>
+                <b>Maternity</b>
+            </a>
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-baby"></i>
+                <b>Pediatrics</b>
+            </a>
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-syringe surgery"></i>
+                <b>Surgery</b>
+            </a>
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-flask"></i>
+                <b>Laboratory</b>
+            </a>
+
+            <a class="department-card" href="#contact">
+                <i class="fa-solid fa-pills"></i>
+                <b>Pharmacy</b>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- MEDICAL TEAM -->
+    <section class="team panel" id="doctors">
+
+        <div class="section-heading">
+            <h2>Our Medical Team</h2>
+            <a href="#doctors">
+                View All Doctors
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="doctor-grid">
+
+            <article class="doctor-card">
+                <img src="assets/doctor-jean.jpg" alt="Dr. Jean Bosco">
+                <b>Dr. Jean Bosco</b>
+                <span>General Physician</span>
+            </article>
+
+            <article class="doctor-card">
+                <img src="assets/doctor-claudine.jpg" alt="Dr. Claudine Uwimana">
+                <b>Dr. Claudine Uwimana</b>
+                <span>Pediatrician</span>
+            </article>
+
+            <article class="doctor-card">
+                <img src="assets/doctor-emmanuel.jpg" alt="Dr. Emmanuel Niyonzima">
+                <b>Dr. Emmanuel Niyonzima</b>
+                <span>Surgeon</span>
+            </article>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- NEWS / PATIENT INFORMATION / BANNER -->
+<section class="lower-section section-pad">
+
+    <!-- NEWS -->
+    <section class="news-block" id="news">
+
+        <div class="section-heading">
+            <h2>Latest News &amp; Updates</h2>
+            <a href="#news">
+                View All News
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="news-grid">
+
+            <article class="news-card">
+                <img src="assets/news-vaccination.jpg" alt="Vaccination campaign">
+
+                <div>
+                    <b>Vaccination Campaign<br>in Kabgayi District</b>
+                    <small>
+                        <i class="fa-regular fa-calendar"></i>
+                        Nov 10, 2025
+                    </small>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="assets/news-awareness.jpg" alt="Health awareness campaign">
+
+                <div>
+                    <b>Health Awareness<br>for Healthy Communities</b>
+                    <small>
+                        <i class="fa-regular fa-calendar"></i>
+                        Nov 5, 2025
+                    </small>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="assets/news-facilities.jpg" alt="Hospital facilities">
+
+                <div>
+                    <b>Improvement of<br>Hospital Facilities</b>
+                    <small>
+                        <i class="fa-regular fa-calendar"></i>
+                        Oct 28, 2025
+                    </small>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- PATIENT INFORMATION -->
+    <section class="patient-info panel" id="patient-info">
+
+        <h2>Patient Information</h2>
+
+        <ul>
+            <li><i class="fa-solid fa-circle-check"></i> Visiting Hours: 7:00 AM – 5:00 PM</li>
+            <li><i class="fa-solid fa-circle-check"></i> Appointment Procedure</li>
+            <li><i class="fa-solid fa-circle-check"></i> Patient Rights</li>
+            <li><i class="fa-solid fa-circle-check"></i> Health Tips</li>
+        </ul>
+
+        <a class="btn btn-primary read-more" href="#contact">
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </section>
+
+    <!-- HEALTH BANNER -->
+    <aside class="health-banner">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <div>
+            <h2>Together for a<br>Healthier Rwanda</h2>
+            <em>Your health is our priority</em>
+        </div>
+
+    </aside>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+
+    <div class="footer-inner">
+
+        <a class="brand footer-brand" href="#">
+
+            <span class="brand-mark">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-heart-pulse"></i>
+            </span>
+
+            <span class="brand-copy">
+                <strong>Kabgayi District Hospital</strong>
+                <small>Care Today, Healthier Tomorrow</small>
+            </span>
+
+        </a>
+
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Kabgayi, Muhanga District, Rwanda</p>
+            <p><i class="fa-solid fa-phone"></i> +250 78 123 4567</p>
+            <p><i class="fa-solid fa-envelope"></i> info@kabgayihospital.rw</p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Useful Links</h3>
+
+            <a href="#about">› &nbsp;About Us</a>
+            <a href="#departments">› &nbsp;Departments</a>
+            <a href="#news">› &nbsp;News &amp; Updates</a>
+
+        </div>
+
+        <div class="footer-column follow-column">
+
+            <h3>Follow Us</h3>
+
+            <div class="footer-social">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 Kabgayi District Hospital. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

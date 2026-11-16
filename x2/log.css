@@ -1,0 +1,551 @@
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #edf5ff;
+    color: #09285b;
+}
+
+/* HEADER */
+.top-header {
+    min-height: 115px;
+    background: #003878;
+    color: white;
+    border-bottom: 5px solid #ffcc00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3%;
+    gap: 20px;
+}
+
+.ministry-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 105px;
+    height: 95px;
+    border-radius: 50%;
+    background: white;
+    border: 4px solid #159447;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+.brand-name {
+    border-left: 2px solid white;
+    padding-left: 25px;
+}
+
+.brand-name span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.brand-name h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.header-slogan {
+    font-size: 21px;
+    font-style: italic;
+    border-left: 2px solid white;
+    padding-left: 30px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.header-links a:hover {
+    color: #ffcc00;
+}
+
+.header-links .sign-in {
+    background: #0864ed;
+    padding: 13px 18px;
+    border-radius: 8px;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: grid;
+    grid-template-columns: 43% 57%;
+    min-height: 850px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.03),
+            rgba(0,38,105,0.25)
+        ),
+        url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.left-content {
+    width: 100%;
+}
+
+.left-content h1 {
+    color: #05275e;
+    font-size: clamp(38px, 4vw, 65px);
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 18px;
+}
+
+.left-content h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.left-content > p {
+    color: #06245a;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 35px;
+}
+
+/* BENEFITS */
+.benefits {
+    background: #003b83;
+    color: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+    max-width: 510px;
+}
+
+.benefits h2 {
+    background: #0868ce;
+    font-size: 25px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin: -20px -25px 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+.benefits li i {
+    color: #00a0ff;
+    font-size: 24px;
+}
+
+/* LEFT BOTTOM MESSAGE */
+.rwanda-message {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 65px;
+    text-align: right;
+    text-shadow: 1px 2px 5px #003878;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    padding: 10px;
+    background: #edf5ff;
+}
+
+.form-container {
+    background: white;
+    border: 3px solid #c9e0ff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,40,100,0.12);
+}
+
+/* FORM HEADER */
+.form-header {
+    background: linear-gradient(90deg, #00449c, #003274);
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 18px 30px;
+}
+
+.form-header i {
+    font-size: 55px;
+}
+
+.form-header h2 {
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.form-header p {
+    margin: 4px 0 0;
+    font-size: 14px;
+}
+
+/* PROGRESS STEPS */
+.progress-steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 18px 8px 12px;
+    position: relative;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 25%;
+}
+
+.step span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #aabbd0;
+    border-radius: 50%;
+    background: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.step.active span {
+    background: #075be2;
+    color: white;
+    border-color: #075be2;
+}
+
+.step p {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+/* FORM SECTIONS */
+.form-section {
+    border: 1px solid #c9dffb;
+    border-radius: 14px;
+    margin: 8px 12px;
+    overflow: hidden;
+    background: white;
+}
+
+.form-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #eaf3ff;
+    padding: 8px 12px;
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.form-section h3 span {
+    background: #075be2;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px 15px;
+    padding: 12px;
+}
+
+.field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.field label b {
+    color: red;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b9cbe0;
+    border-radius: 9px;
+    height: 42px;
+    overflow: hidden;
+    background: white;
+}
+
+.input-group:focus-within {
+    border-color: #0874ec;
+    box-shadow: 0 0 0 3px rgba(8,116,236,0.12);
+}
+
+.input-group > i {
+    color: #052b66;
+    font-size: 19px;
+    padding: 0 12px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+    color: #203c62;
+    padding: 0 5px;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+.input-group input::placeholder {
+    color: #74849a;
+}
+
+.eye-button {
+    border: none;
+    background: white;
+    color: #082c62;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* TERMS */
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.terms input {
+    width: 19px;
+    height: 19px;
+    accent-color: #075be2;
+}
+
+/* BUTTONS */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px 15px 18px;
+}
+
+.form-buttons button {
+    border: none;
+    border-radius: 9px;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-button {
+    background: #dce3ed;
+    color: #102d59;
+    width: 40%;
+}
+
+.register-button {
+    background: #0754dc;
+    color: white;
+    width: 55%;
+}
+
+.reset-button:hover {
+    background: #c4cfdd;
+}
+
+.register-button:hover {
+    background: #003878;
+    transform: translateY(-2px);
+}
+
+#message {
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+}
+
+/* FOOTER */
+.footer {
+    background: #003574;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1100px) {
+
+    .top-header {
+        flex-wrap: wrap;
+    }
+
+    .header-slogan {
+        display: none;
+    }
+
+    .header-links {
+        flex-wrap: wrap;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-panel {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .top-header {
+        justify-content: center;
+    }
+
+    .brand-name h2 {
+        font-size: 21px;
+    }
+
+    .brand-name span {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    .header-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .header-links a {
+        font-size: 12px;
+    }
+
+    .left-panel {
+        min-height: 550px;
+        padding: 22px;
+    }
+
+    .left-content h1 {
+        font-size: 42px;
+    }
+
+    .left-content h3 {
+        font-size: 16px;
+    }
+
+    .left-content > p {
+        font-size: 14px;
+    }
+
+    .rwanda-message {
+        font-size: 23px;
+    }
+
+    .form-header {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .form-header i {
+        font-size: 35px;
+    }
+
+    .form-header h2 {
+        font-size: 17px;
+    }
+
+    .form-header p {
+        font-size: 11px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step p {
+        font-size: 9px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+}
